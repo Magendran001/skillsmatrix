@@ -66,7 +66,7 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
       <div
     
         id="bodyDiv"
-        className={`h-auto border border-red-700 pt-[100px]  min-h-[100vh]  transition-all duration-300 border-b-2 text-center flex grow ${
+        className={`h-auto  pt-[100px]  min-h-[100vh]  transition-all duration-300 border-b-2 text-center flex grow ${
           isExpanded ? "lg:w-[90%] lg:ml-[10%]" : "lg:w-[80%] lg:ml-[20%]"
         }`}
       >
