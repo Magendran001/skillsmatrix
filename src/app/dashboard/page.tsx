@@ -8,6 +8,11 @@ interface Product {
   // Add other properties if needed
 }
 
+export const metadata = {
+  title: 'Dashboard',
+  description: 'This is the dashboard page of YourApp where you can view your activities and reports.',
+  keywords: 'dashboard, user, activities, reports',
+};
 async function fetchData() {
     // Fetch data from an API or database
     const res = await fetch(`${API_URL}/api/products`);
