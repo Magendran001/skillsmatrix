@@ -43,7 +43,7 @@ export default function DocumentPage() {
                   />
                   <div className="flex flex-col">
                     <span className="text-sm font-semibold text-gray-900 cursor-pointer hover:text-primary mb-px">
-                      Azure.pdf
+                      Azure Certificate
                     </span>
                     <span className="text-xs font-normal text-gray-600">
                       4.7 MB 26 Sep 2024 3:20 PM
