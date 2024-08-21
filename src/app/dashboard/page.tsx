@@ -2,10 +2,11 @@
 "use client";
 import Image from 'next/image';
 import Link from 'next/link';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
 
 async function fetchData() {
     // Fetch data from an API or database
-    const res = await fetch('http://localhost:3000/api/products');
+    const res = await fetch(`${API_URL}/api/products`);
     const data = await res.json();
     return data;
   }
