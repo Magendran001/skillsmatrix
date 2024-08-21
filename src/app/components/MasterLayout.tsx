@@ -6,9 +6,9 @@ import Header from "./Header";
 
 
 export default function MasterLayout({ children }: { children: React.ReactNode }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [hoverClass, setHoverClass] = useState("");
-  const [fixedClass,setFixedClass] = useState("");
+  const [isExpanded, setIsExpanded] = useState(false); //sidebar expand
+  const [hoverClass, setHoverClass] = useState(""); // side bar hoverover extra class
+ 
 
   const handleButtonClick = () => {
     setIsExpanded(!isExpanded);
@@ -18,12 +18,12 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
     if (isExpanded) {
       const timer = setTimeout(() => {
         setHoverClass("hover:w-[20%]");
-        setFixedClass("");
+    
       }, 100); // Add hover class after 1 second
       return () => clearTimeout(timer); // Cleanup timeout on unmount or state change
     } else {
       setHoverClass(""); // Reset hover class when not expanded
-      setFixedClass("fixed");
+      
     }
   }, [isExpanded]);
 
@@ -31,8 +31,9 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
     <>
       {/* Sidebar */}
       <div
+      
         id="SideBar"
-        className={`z-40 bg-black text-white h-[100%] grow stretch hidden fixed lg:flex transition-all duration-300 ${
+        className={`z-40 bg-black text-white h-[100%]  hidden fixed lg:flex transition-all duration-300 ${
           isExpanded ? `w-[10%] ${hoverClass}` : "w-[20%]"
         } `}
       >
@@ -54,8 +55,8 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
       <div
      
         id="contentDiv"
-        className={`z-30 fixed w-[100%]  transition-all duration-300 border-b-2 h-[100px] text-center flex grow bg-white ${
-          isExpanded ? "lg:w-[90%] lg:ml-[10%] " : "lg:w-[80%] lg:ml-[20%] fixed"
+        className={` fixed w-[100%]  transition-all duration-300 border-b-2 h-[100px] text-center flex grow bg-white ${
+          isExpanded ? "lg:w-[90%] lg:ml-[10%] " : "lg:w-[80%] lg:ml-[20%] "
         }`}
       >
         <Header/>
@@ -65,7 +66,7 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
       <div
     
         id="bodyDiv"
-        className={`h-auto  pt-[100px]  min-h-[100vh]  transition-all duration-300 border-b-2 text-center flex grow ${
+        className={`h-auto border border-red-700 pt-[100px]  min-h-[100vh]  transition-all duration-300 border-b-2 text-center flex grow ${
           isExpanded ? "lg:w-[90%] lg:ml-[10%]" : "lg:w-[80%] lg:ml-[20%]"
         }`}
       >

@@ -12,7 +12,7 @@ async function fetchData() {
   
 
 const Dashboard = async() => {
-    const data = await fetchData();
+    // const data = await fetchData();
     
   return (
     <main className=" grow content pt-5" id="content" role="content">

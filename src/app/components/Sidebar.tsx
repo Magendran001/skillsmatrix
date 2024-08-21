@@ -25,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isExpanded }) => {
   return (
     <div
       style={{ width: "80%",zIndex:1 }}
-      className=" mx-auto my-5  lg:flex flex-col items-stretch shrink-0 items-center justify-center"
+      className="mx-auto my-5  lg:flex flex-col shrink-0  justify-center"
     >
 
        {/* logo */}
