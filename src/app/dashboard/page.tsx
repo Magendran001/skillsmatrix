@@ -1,8 +1,12 @@
 // pages/dashboard.tsx
-"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+interface Product {
+  name: string;
+  // Add other properties if needed
+}
 
 async function fetchData() {
     // Fetch data from an API or database
@@ -14,6 +18,7 @@ async function fetchData() {
 
 const Dashboard = async() => {
     const data = await fetchData();
+    console.log(data,"data");
     
   return (
     <main className=" grow content pt-5" id="content" role="content">
@@ -260,11 +265,11 @@ const Dashboard = async() => {
         </div>
       </div>
 
-      {/* <div>
-        {data.map((ele:object)=>{
+      <div>
+        {data.map((ele:Product)=>{
             return ele.name;
         })}
-      </div> */}
+      </div>
       {/* end: container */}
     </main>
   );

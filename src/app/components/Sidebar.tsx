@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isExpanded }) => {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+ 
 
   return (
     <div
