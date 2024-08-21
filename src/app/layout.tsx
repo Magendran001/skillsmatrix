@@ -26,9 +26,9 @@ export default function RootLayout({
           <link href="/assets/vendors/keenicons/styles.bundle.css" rel="stylesheet" />
         </Head>
       <body className="relative min-h-screen"  >
-        <ThemeProvider>
+      
         <MasterLayout>{children}</MasterLayout>
-        </ThemeProvider>
+        
       </body>
     </html>
   );
