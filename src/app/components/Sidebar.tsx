@@ -95,9 +95,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isExpanded }) => {
 
 
    {/* SideBar Footer */}
-      <div className="sidebar-footer flex flex-col px-3 py-4 ">
+      {/* <div className="sidebar-footer flex flex-col px-3 py-4 ">
         <button>Toggle Dark Mode</button>
-      </div>
+      </div> */}
     </div>
   );
 };

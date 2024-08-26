@@ -91,18 +91,18 @@ const Dashboard = async() => {
               <div className="card h-full">
                 <div className="card-body p-10 bg-[length:80%] [background-position:175%_25%] bg-no-repeat entry-callout-bg">
                   <div className="flex flex-col justify-center gap-4">
-                    <div className="flex -space-x-2">
+                    <div className="flex -space-x-2 justify-center">
                       <div className="flex">
-                        <Image className="hover:z-5 relative shrink-0 rounded-full ring-1 ring-light-light size-10" src="/assets/media/avatars/300-4.png" width={40} height={40} alt="" />
+                        <Image className="hover:z-5  shrink-0 rounded-full ring-1 ring-light-light size-10" src="/assets/media/avatars/300-4.png" width={40} height={40} alt="" />
                       </div>
                       <div className="flex">
-                        <Image className="hover:z-5 relative shrink-0 rounded-full ring-1 ring-light-light size-10" src="/assets/media/avatars/300-1.png" width={40} height={40} alt="" />
+                        <Image className="hover:z-5  shrink-0 rounded-full ring-1 ring-light-light size-10" src="/assets/media/avatars/300-1.png" width={40} height={40} alt="" />
                       </div>
                       <div className="flex">
-                        <Image className="hover:z-5 relative shrink-0 rounded-full ring-1 ring-light-light size-10" src="/assets/media/avatars/300-2.png" width={40} height={40} alt="" />
+                        <Image className="hover:z-5  shrink-0 rounded-full ring-1 ring-light-light size-10" src="/assets/media/avatars/300-2.png" width={40} height={40} alt="" />
                       </div>
                       <div className="flex">
-                        <span className="hover:z-5 relative inline-flex items-center justify-center shrink-0 rounded-full ring-1 font-semibold leading-none text-3xs size-10 text-success-inverse text-xs ring-success-light bg-success">
+                        <span className="hover:z-5  inline-flex items-center justify-center shrink-0 rounded-full ring-1 font-semibold leading-none text-3xs size-10 text-success-inverse text-xs ring-success-light bg-success">
                           S
                         </span>
                       </div>
@@ -199,7 +199,7 @@ const Dashboard = async() => {
                     </div>
                   </div>
                 </div>
-                <div className="card-body p-5">
+                <div className="card-body p-5 text-start">
                   <div className="flex items-center mb-6">
                     <div className="symbol symbol-50px me-4">
                       <Image src="/assets/media/avatars/300-6.png" alt="" width={50} height={50} className="h-12 object-cover" />
