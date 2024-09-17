@@ -389,7 +389,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-                <div className="card  ">
+                <div className="card">
                   <div className="card-header ">
                     <h3 className="card-title">Projects History</h3>
                   </div>
@@ -566,7 +566,7 @@ const Dashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card-footer justify-center ">
+                  <div className="card-footer justify-center">
                     <a
                       className="btn btn-link"
                       href="html/demo1/public-profile/activity.html"

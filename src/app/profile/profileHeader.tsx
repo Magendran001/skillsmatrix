@@ -36,8 +36,8 @@ interface ProfileHeaderProps {
         
           <div className="flex flex-wrap justify-center gap-1 lg:gap-4.5 text-sm">
             <div className="flex gap-1.25 items-center">
-              <i className="ki-filled ki-abstract-41 text-gray-500 text-sm" />
-              <span className="text-gray-600">Frontend Developer</span>
+              <i className="ki-filled ki-abstract-41 text-gray-500 text-sm static" />
+              <span className="text-gray-600 ">Frontend Developer</span>
             </div>
             <div className="flex gap-1.25 items-center">
               <i className="ki-filled ki-geolocation text-gray-500 text-sm" />

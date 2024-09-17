@@ -3,15 +3,72 @@ import Image from 'next/image';
 const OverviewPage = () => {
   return (
     <div className="container-fixed">
-      <div className="grid gap-5 lg:gap-7.5">
+      <div className="grid gap-5 lg:gap-7.5 grid-cols-[35%,65%]">
         
         {/* About Section */}
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">About</h3>
           </div>
-          <div className="card-body pt-4 pb-3 text-start">
+          {/* <div className="card-body pt-4 pb-3 text-start">
             You can use this text area to tell others about yourself, previous projects, interests, your values or more...
+          </div> */}
+          <div className="card-body pt-4 pb-3">
+           <table className="table-auto">
+            <tbody>
+            <tr>
+              <td className="text-sm font-medium text-gray-500 pb-3.5 pe-3">
+               Phone:
+              </td>
+              <td className="text-sm font-medium text-gray-800 pb-3.5">
+               +31 6 1234 56 78
+              </td>
+             </tr>
+             <tr>
+              <td className="text-sm font-medium text-gray-500 pb-3.5 pe-3">
+               Email:
+              </td>
+              <td className="text-sm font-medium text-gray-800 pb-3.5">
+               <a className="text-gray-800 hover:text-primary-active" href="#">
+                jenny@ktstudio.com
+               </a>
+              </td>
+             </tr>
+             <tr>
+              <td className="text-sm font-medium text-gray-500 pb-3.5 pe-3">
+               City:
+              </td>
+              <td className="text-sm font-medium text-gray-800 pb-3.5">
+               Hyderabad
+              </td>
+             </tr>
+             <tr>
+              <td className="text-sm font-medium text-gray-500 pb-3.5 pe-3">
+               State:
+              </td>
+              <td className="text-sm font-medium text-gray-800 pb-3.5">
+               North Holland
+              </td>
+             </tr>
+             <tr>
+              <td className="text-sm font-medium text-gray-500 pb-3.5 pe-3">
+               Country:
+              </td>
+              <td className="text-sm font-medium text-gray-800 pb-3.5">
+               Netherlands
+              </td>
+             </tr>
+             <tr>
+              <td className="text-sm font-medium text-gray-500 pb-3.5 pe-3">
+               Postcode:
+              </td>
+              <td className="text-sm font-medium text-gray-800 pb-3.5">
+               1092 NL
+              </td>
+             </tr>
+           
+            </tbody>
+           </table>
           </div>
         </div>
         

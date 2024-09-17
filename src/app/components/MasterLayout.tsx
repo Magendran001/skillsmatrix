@@ -33,7 +33,7 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
       <div
       
         id="SideBar"
-        className={`z-40 bg-black text-white h-[100%]  hidden fixed lg:flex transition-all duration-300 ${
+        className={`z-40 bg-white text-white h-[100%]  hidden fixed lg:flex transition-all duration-300 ${
           isExpanded ? `w-[10%] ${hoverClass}` : "w-[20%]"
         } `}
       >
@@ -42,11 +42,12 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
         <button
           id="adjustButton"
           onClick={handleButtonClick}
-          className="px-2 py-1 bg-blue-500 text-white rounded absolute top-3 -right-3 transition-all duration-300"
+          className=" absolute top-3 -right-2 z-20  btn btn-icon btn-icon-md size-[30px] rounded-lg border border-gray-200  bg-light text-gray-500 hover:text-gray-700  "
+          style={{backgroundColor:"#ffffff"}}
         >
           
-          {isExpanded ?   <i className="ki-filled ki-black-right-line transition-all rotate-180 duration-1000 ">
-            </i>: <i className="ki-filled ki-black-left-line rotate-180 transition-all duration-1000">
+          {isExpanded ?   <i className="ki-filled ki-black-right-line transition-all rotate-180 duration-1000  text-gray-500 ">
+            </i>: <i className="ki-filled ki-black-left-line rotate-180 transition-all duration-1000 text-gray-500 ">
             </i> }
         </button>
       </div>
@@ -55,7 +56,7 @@ export default function MasterLayout({ children }: { children: React.ReactNode }
       <div
      
         id="contentDiv"
-        className={` fixed w-[100%]  transition-all duration-300 border-b-2 h-[100px] text-center flex grow bg-white ${
+        className={` fixed w-[100%]  transition-all duration-300 h-[100px] text-center flex grow bg-white ${
           isExpanded ? "lg:w-[90%] lg:ml-[10%] " : "lg:w-[80%] lg:ml-[20%] "
         }`}
       >
